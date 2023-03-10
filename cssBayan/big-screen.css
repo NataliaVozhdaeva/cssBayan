@@ -1,0 +1,65 @@
+@media only screen and (min-width: 480px) {
+  .wrapper {
+    max-width: 75vw;
+  }
+
+  .main-title {
+    max-width: 75vw;
+  }
+}
+
+@media only screen and (min-width: 820px) {
+  .wrapper {
+    max-width: 55vw;
+  }
+
+  .main-title {
+    max-width: 55vw;
+    font-size: 2em;
+  }
+
+  .meme-container {
+    font-size: 1.5em;
+  }
+
+  .meme-label {
+    padding: 5% 0;
+  }
+
+  .meme-label:hover > .meme-picture,
+  .meme-label > .meme-picture:hover {
+    margin-top: 5%;
+  }
+
+  .radio-btn:checked + .meme-label > .meme-picture {
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (min-width: 1180px) {
+  body {
+    padding-top: 2%;
+  }
+
+  .wrapper {
+    max-width: 25vw;
+  }
+
+  .main-title {
+    max-width: 25vw;
+    font-size: 2.5em;
+  }
+
+  .meme-container {
+    font-size: 1.5em;
+  }
+
+  .wrapper:hover .meme-label:hover,
+  .meme-picture:hover {
+    background-position: top 5% right;
+  }
+
+  .wrapper:hover .radio-btn:checked + .meme-label {
+    background-position: top 5% right;
+  }
+}

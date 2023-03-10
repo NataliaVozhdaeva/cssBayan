@@ -1,16 +1,52 @@
-.meme-container {
+body {
+  padding-top: 5%;
+}
+
+.wrapper {
   max-width: 97vw;
+  margin: auto;
+}
+
+.wrapper:hover,
+.meme-label:hover,
+.meme-picture:hover {
+  cursor: pointer;
+}
+
+.meme-container {
+  max-width: 90%;
   margin: auto;
 
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 
+  font-size: 1em;
+
   border-bottom: lightgreen 2px solid;
+}
+
+.main-title {
+  max-width: 97vw;
+  margin: auto;
+
+  font-size: 1.5em;
 }
 
 .meme-container:first-child {
   border-top: lightgreen 2px solid;
+}
+
+.meme-label {
+  width: 100%;
+  padding: 5vw 0;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+
+  font-weight: 700;
 }
 
 .meme-picture {
@@ -26,58 +62,21 @@
   display: none;
 }
 
-.meme-label {
-  width: 100%;
-  padding: 5vw 0;
-
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-
-  font-weight: 700;
-}
-
-.close-btn {
-  transform: rotate(45deg);
-  transition: all 0.5s;
-}
-
 .meme-label:hover > .meme-picture,
 .meme-label > .meme-picture:hover {
   height: auto;
-  margin-bottom: 5vw;
+  margin-top: 5vw;
 
   transform: scaleY(1);
   transition: 0.5s;
-}
-
-.meme-label:hover > .close-btn {
-  transform: rotate(0);
-}
-
-.radio-btn:checked + .meme-label {
-  color: #000;
 }
 
 .radio-btn:checked + .meme-label > .meme-picture {
   height: auto;
-  margin-bottom: 5vw;
+  margin-top: 5vw;
 
   transform: scaleY(1);
   transition: 0.5s;
-}
-
-.radio-btn:checked + .meme-label > .close-btn {
-  transform: rotate(0);
-}
-
-.wrapper .close-btn {
-  opacity: 0;
-}
-
-.wrapper:hover .close-btn {
-  opacity: 1;
 }
 
 .wrapper .meme-label {
@@ -86,6 +85,7 @@
 
 .wrapper:hover .meme-label {
   color: #000;
+  background: url('./assets/close-icon.png') no-repeat center right;
 }
 
 .meme-container:active > .meme-label {
@@ -93,5 +93,24 @@
 }
 
 .meme-container:active > .meme-label > .meme-picture {
-  opacity: 0.8;
+  opacity: 0.5;
+}
+
+.wrapper:hover .meme-label:hover,
+.meme-picture:hover {
+  background: url('./assets/open-icon.png') no-repeat top 3% right;
+}
+
+.wrapper:hover .radio-btn:checked + .meme-label {
+  color: #000;
+  background: url('./assets/open-icon.png') no-repeat top 3% right;
+}
+
+.wrapper .radio-btn:checked + .meme-label {
+  color: #000;
+  background: url('./assets/open-icon.png') no-repeat top 3% right;
+}
+
+.wrapper .radio-btn:checked + .meme-label {
+  background: none;
 }
