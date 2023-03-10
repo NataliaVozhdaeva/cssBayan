@@ -1,5 +1,5 @@
 .meme-container {
-  max-width: 98vw;
+  max-width: 97vw;
   margin: auto;
 
   display: flex;
@@ -32,14 +32,19 @@
 
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
+
+  font-weight: 700;
 }
 
 .close-btn {
   transform: rotate(45deg);
+  transition: all 0.5s;
 }
 
-.meme-label:hover ~ .meme-picture {
+.meme-label:hover > .meme-picture,
+.meme-label > .meme-picture:hover {
   height: auto;
   margin-bottom: 5vw;
 
@@ -47,10 +52,46 @@
   transition: 0.5s;
 }
 
-.radio-btn:checked + label ~ .meme-picture {
+.meme-label:hover > .close-btn {
+  transform: rotate(0);
+}
+
+.radio-btn:checked + .meme-label {
+  color: #000;
+}
+
+.radio-btn:checked + .meme-label > .meme-picture {
   height: auto;
   margin-bottom: 5vw;
 
   transform: scaleY(1);
   transition: 0.5s;
+}
+
+.radio-btn:checked + .meme-label > .close-btn {
+  transform: rotate(0);
+}
+
+.wrapper .close-btn {
+  opacity: 0;
+}
+
+.wrapper:hover .close-btn {
+  opacity: 1;
+}
+
+.wrapper .meme-label {
+  color: green;
+}
+
+.wrapper:hover .meme-label {
+  color: #000;
+}
+
+.meme-container:active > .meme-label {
+  color: green;
+}
+
+.meme-container:active > .meme-label > .meme-picture {
+  opacity: 0.8;
 }
