@@ -74,10 +74,6 @@ body {
   color: green;
 }
 
-.meme-container:active > .meme-label {
-  color: green;
-}
-
 .wrapper .radio-btn:checked + .meme-label {
   color: #000;
   background: url('./assets/open-icon.png') no-repeat top 3% right;
@@ -111,8 +107,17 @@ body {
     background: url('./assets/open-icon.png') no-repeat top 3% right;
   }
 
+  .wrapper:hover .meme-container:active + .meme-label {
+    background: url('./assets/open-icon-green.png') no-repeat top 3% right;
+  }
+
   .wrapper:hover .radio-btn:checked + .meme-label {
     color: #000;
     background: url('./assets/open-icon.png') no-repeat top 3% right;
+  }
+
+  .wrapper:hover .meme-container:active > .meme-label {
+    color: green;
+    background: url('./assets/open-icon-green.png') no-repeat top 3% right;
   }
 }
