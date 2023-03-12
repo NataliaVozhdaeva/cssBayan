@@ -6,6 +6,10 @@
   .main-title {
     max-width: 75vw;
   }
+
+  .meme-picture {
+    object-fit: contain;
+  }
 }
 
 @media only screen and (min-width: 567px) {
@@ -15,31 +19,22 @@
 
   .main-title {
     max-width: 100%;
-    font-size: 1.8em;
+    font-size: 1.5em;
   }
 
   .meme-container {
-    max-width: 100%;
-    font-size: 1.1em;
-  }
-
-  .meme-label {
-    padding: 5% 0;
-  }
-
-  .meme-label:hover > .meme-picture,
-  .meme-label > .meme-picture:hover {
-    margin-top: 5%;
-  }
-
-  .radio-btn:checked + .meme-label > .meme-picture {
-    margin-top: 5%;
+    font-size: 1.2em;
+    overflow-x: hidden;
   }
 }
 
 @media only screen and (min-width: 901px) {
   .wrapper {
     max-width: 45vw;
+  }
+
+  .meme-label {
+    width: 100%;
   }
 }
 
@@ -54,25 +49,10 @@
 
   .main-title {
     max-width: 100%;
-    font-size: 2em;
+    font-size: 1.6em;
   }
 
   .meme-container {
-    max-width: 100%;
-    font-size: 1.2em;
-  }
-
-  .wrapper:hover .meme-label:hover,
-  .meme-picture:hover {
-    background-position: top 5% right;
-  }
-
-  .wrapper:hover .radio-btn:checked + .meme-label {
-    background-position: top 5% right;
-  }
-
-  .wrapper:hover .meme-container:active > .meme-label {
-    color: green;
-    background: url('./assets/open-icon-green.png') no-repeat top 5% right;
+    font-size: 1.3em;
   }
 }
