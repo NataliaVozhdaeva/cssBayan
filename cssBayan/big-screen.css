@@ -14,12 +14,13 @@
   }
 
   .main-title {
-    max-width: 55vw;
-    font-size: 2em;
+    max-width: 100%;
+    font-size: 1.8em;
   }
 
   .meme-container {
-    font-size: 1.5em;
+    max-width: 100%;
+    font-size: 1.1em;
   }
 
   .meme-label {
@@ -36,22 +37,29 @@
   }
 }
 
-@media only screen and (min-width: 1180px) {
+@media only screen and (min-width: 901px) {
+  .wrapper {
+    max-width: 45vw;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
   body {
     padding-top: 2%;
   }
 
   .wrapper {
-    max-width: 27vw;
+    max-width: 33vw;
   }
 
   .main-title {
-    max-width: 27vw;
-    font-size: 2.5em;
+    max-width: 100%;
+    font-size: 2em;
   }
 
   .meme-container {
-    font-size: 1.5em;
+    max-width: 100%;
+    font-size: 1.2em;
   }
 
   .wrapper:hover .meme-label:hover,

@@ -3,7 +3,7 @@ body {
 }
 
 .wrapper {
-  max-width: 97vw;
+  max-width: 90%;
   margin: auto;
 }
 
@@ -14,32 +14,32 @@ body {
 }
 
 .meme-container {
-  max-width: 90%;
+  width: 80%;
   margin: auto;
 
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  flex-direction: column;
 
   font-size: 1em;
 
-  border-bottom: lightgreen 2px solid;
+  border-bottom: lightgreen 0.1em solid;
 }
 
 .main-title {
-  max-width: 97vw;
+  max-width: 30em;
   margin: auto;
 
   font-size: 1.5em;
 }
 
 .meme-container:first-child {
-  border-top: lightgreen 2px solid;
+  border-top: lightgreen 0.1em solid;
 }
 
 .meme-label {
   width: 100%;
-  padding: 5vw 0;
+  padding: 1em 0;
 
   display: flex;
   justify-content: space-between;
@@ -50,12 +50,12 @@ body {
 }
 
 .meme-picture {
-  width: 100%;
+  width: 15em;
   height: 0;
-
-  transform-origin: 50% 0;
-  transform: scaleY(0);
-  transition: 0.5s;
+  margin: 0 auto;
+  margin-top: 0.5em;
+  overflow: hidden;
+  transition: 1s;
 }
 
 .radio-btn {
@@ -63,15 +63,10 @@ body {
 }
 
 .radio-btn:checked + .meme-label > .meme-picture {
-  height: auto;
-  margin-top: 5vw;
-
-  transform: scaleY(1);
-  transition: 0.5s;
-}
-
-.wrapper .meme-label {
-  color: green;
+  height: 15em;
+  margin: auto;
+  margin-top: 0.5em;
+  transition: 1s;
 }
 
 .wrapper .radio-btn:checked + .meme-label {
@@ -86,11 +81,8 @@ body {
 @media (hover: hover) {
   .meme-label:hover > .meme-picture,
   .meme-label > .meme-picture:hover {
-    height: auto;
-    margin-top: 5vw;
-
-    transform: scaleY(1);
-    transition: 0.5s;
+    height: 15em;
+    transition: 1s;
   }
 
   .wrapper:hover .meme-label {
