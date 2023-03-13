@@ -47,6 +47,8 @@ body {
   padding: 0.5em 0;
 
   font-weight: 700;
+
+  color: green;
 }
 
 .label-wrapper {
@@ -76,13 +78,8 @@ body {
 }
 
 .wrapper .radio-btn:checked + .meme-label {
-  color: #000; /* 
-  background: url('./assets/open-icon.png') no-repeat top 3% right; */
+  color: #000;
 }
-
-/* .wrapper .radio-btn:checked + .meme-label {
-  background: none;
-} */
 
 .btn {
   width: 26px;
@@ -106,7 +103,7 @@ body {
     transition: 1s;
   }
 
-  .wrapper:hover .meme-label {
+  .wrapper:hover .meme-label span {
     color: #000;
   }
 
@@ -147,7 +144,7 @@ body {
     opacity: 1;
   }
 
-  .wrapper:hover .meme-container:active > .meme-label {
+  .wrapper:hover .meme-container:active > .meme-label .label-wrapper span {
     color: green;
     /* background: url('./assets/open-icon-green.png') no-repeat top 1em right; */
   }
