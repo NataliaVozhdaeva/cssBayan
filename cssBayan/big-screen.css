@@ -1,0 +1,58 @@
+@media only screen and (min-width: 480px) {
+  .wrapper {
+    max-width: 75vw;
+  }
+
+  .main-title {
+    max-width: 75vw;
+  }
+
+  .meme-picture {
+    object-fit: contain;
+  }
+}
+
+@media only screen and (min-width: 567px) {
+  .wrapper {
+    max-width: 55vw;
+  }
+
+  .main-title {
+    max-width: 100%;
+    font-size: 1.5em;
+  }
+
+  .meme-container {
+    font-size: 1.2em;
+    overflow-x: hidden;
+  }
+}
+
+@media only screen and (min-width: 901px) {
+  .wrapper {
+    max-width: 45vw;
+  }
+
+  .meme-label {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  body {
+    padding-top: 2%;
+  }
+
+  .wrapper {
+    max-width: 33vw;
+  }
+
+  .main-title {
+    max-width: 100%;
+    font-size: 1.6em;
+  }
+
+  .meme-container {
+    font-size: 1.3em;
+  }
+}
